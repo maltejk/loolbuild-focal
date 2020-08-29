@@ -9,7 +9,7 @@ RUN sed -i 's/# deb-/deb-/' /etc/apt/sources.list \
         libcap-dev libtool m4 automake libcppunit-dev libcppunit-doc pkg-config \
         curl git devscripts fakeroot dh-systemd python-lxml python3-polib \
         libpam-dev cpio libreoffice libreoffice-dev libreofficekit-dev \
-        nodejs npm sudo \
+        nodejs npm sudo lsb-release \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g jake \
